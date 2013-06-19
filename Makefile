@@ -356,7 +356,7 @@ ifeq ($(ARCH),x86_64)
  endif
 
  ifeq ($(strip $(BUILD_X11)),YES)
-  $(warning Warning: Software X Renderer not supported for $(ARCH))
+  TARGETS += $(BUILDDIR)/ref_softx.$(SHLIBEXT)
  endif
 
  ifeq ($(strip $(BUILD_SDL)),YES)

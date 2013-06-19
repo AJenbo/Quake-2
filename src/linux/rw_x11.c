@@ -53,7 +53,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include <X11/Xatom.h>
 #include <X11/keysym.h>
 #include <X11/extensions/XShm.h>
-#include <X11/extensions/xf86dga.h>
+#include <X11/extensions/Xxf86dga.h>
 #ifdef OPENGL
 #include <X11/extensions/xf86vmode.h>
 #endif
@@ -151,7 +151,7 @@ int config_notify_width;
 int config_notify_height;
 						      
 typedef unsigned short PIXEL16;
-typedef unsigned long PIXEL24;
+typedef unsigned int PIXEL24;
 #ifdef REDBLUE
 static PIXEL16 st2d_8to16table_s[2][256];
 static PIXEL24 st2d_8to24table_s[2][256];
